@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                 const  Text(
+                  const Text(
                     'Sunny',
                     style: TextStyle(
                         color: Colors.white,
@@ -69,11 +69,98 @@ class HomeScreen extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                         fontFamily: 'Hubbali'),
                   ),
-                  Row(children: [Expanded(child: Column(children: [
-                    Image.asset('assets/image/icons8-windwhite-100.png',width: size.width * 0.15,),
-                    const  Text('17.1 km/h',style:  TextStyle(color: Colors.white,fontFamily: 'Hubballi',fontSize: 20),)
-
-                  ],))],)
+                 Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                'assets/img/icons8-windwhite-100.png',
+                                width: size.width * 0.1,
+                              ),
+                              Text(
+                                'data?.wind}  km/h',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Hubballi',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Text(
+                                'Wind',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Hubballi',
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                'assets/img/cloudy.png',
+                                width: size.width * 0.1,
+                              ),
+                               Text(
+                                'data?.humidity',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Hubballi',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Text(
+                                'Humidity',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Hubballi',
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                'assets/img/icons8-windflag-100.png',
+                                width: size.width * 0.1,
+                              ),
+                              // Text(
+                              //   '${data?.windDirection}',
+                              //   style: const TextStyle(
+                              //       color: Colors.white,
+                              //       fontFamily: 'Hubballi',
+                              //       fontSize: 20,
+                              //       fontWeight: FontWeight.bold),
+                              // ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Text(
+                                'Wind Direction',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Hubballi',
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    )
+                  
                 ],
               ),
             )

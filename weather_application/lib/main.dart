@@ -18,12 +18,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-      scaffoldBackgroundColor:   Color(0xff01b25),
+      scaffoldBackgroundColor: const   Color(0xff01b25),
        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home:  HomePaage(),
     );
   }
 }
